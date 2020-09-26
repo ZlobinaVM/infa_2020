@@ -2,7 +2,7 @@
 import pygame
 from pygame.draw import *
 from math import pi
-
+#colors
 COLOR_BROWN = (82, 69, 16)
 COLOR_LIGHT_BROWN = (124, 102, 29)
 COLOR_ORANGE = (188, 117, 66)
@@ -24,7 +24,7 @@ screen = pygame.display.set_mode((600, 800))
 rect(screen, COLOR_BROWN, (0, 0, 600, 400))
 rect(screen, COLOR_LIGHT_BROWN, (0, 400, 600, 700))
 
-
+# because pygame have not int() inside
 def ellipse1(sf, cl, coords):
     ellipse(sf, cl, (int(coords[0]), int(coords[1]), int(coords[2]), int(coords[3])))
 
