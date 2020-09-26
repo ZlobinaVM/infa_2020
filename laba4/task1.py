@@ -171,11 +171,12 @@ screen.blit(draw_ball(0.7, 'left'), (100, 605))
 pygame.display.update()
 clock = pygame.time.Clock()
 finished = False
-picture = ''
+picture = '8'
 while not finished:
     clock.tick(FPS)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             finished = True
+
 
 pygame.quit()
